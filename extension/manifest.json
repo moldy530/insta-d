@@ -2,15 +2,17 @@
   "manifest_version": 2,
   "name": "insta-d",
   "description": "add a download link to instagram pages",
-  "version": "1.0.0",
-  "permissions": ["activeTab"],
+  "version": "1.0.1",
+  "permissions": [
+    "activeTab"
+  ],
   "web_accessible_resources": [
     "images/*"
   ],
   "content_scripts": [
     {
       "matches": [
-        "https://*.instagram.com/p/*"
+        "https://*.instagram.com/*"
       ],
       "js": ["script.js"]
     }
